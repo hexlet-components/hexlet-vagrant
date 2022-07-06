@@ -2,20 +2,20 @@
 
 [![Main](https://github.com/hexlet-components/js-fastify-blog/actions/workflows/main.yml/badge.svg)](https://github.com/hexlet-components/js-fastify-blog/actions/workflows/main.yml)
 
-## Требования
+## Requirement
 
 * NodeJS v14.18.1
 * Sqlite или PostgreSQL
 
-## Команды
+## Commands
 
 ```bash
 make setup
 ```
 
-## Запуск тестов с Postgres
+## Run tests with Postgres
 
-Для запуска тестов с Postgres необходимо отредактировать *config/config.cjs* и в под ключом `test` закомментировать использование SQLite и раскомментировать переменные окружения
+To run tests with Postgres, you need to edit *config/config.cjs* and under the `test` key comment out the use of SQLite and uncomment the environment variables
 
 ```js
   // test: {
@@ -32,13 +32,13 @@ make setup
   },
 ```
 
-Указать переменные окружения вручную или подготовить файл *.env* командой
+Specify environment variables manually or prepare a *.env* file with the command
 
 ```bash
 make env-prepare
 ```
 
-В нём указать данные для подключения к БД
+In it specify the data to connect to the database
 
 ```dotenv
 DATABASE_NAME=postgres
@@ -48,11 +48,11 @@ DATABASE_PORT=5432
 DATABASE_HOST=localhost
 ```
 
-## Запуск приложения с Postgres (продакшен)
+## Running an application with Postgres (production)
 
-Экспортировать переменные окружения для работы с БД или подготовить *.env* файл с переменными
+Export environment variables to work with the database or prepare a *.env* file with variables
 
-Запуск
+Run
 
 ```bash
 make start # Open in browser: http://localhost:8080
@@ -60,6 +60,8 @@ make start # Open in browser: http://localhost:8080
 
 ---
 
-[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=exercises-javascript)
+[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=hexlet-vagrant)
 
-This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=js-fastify-blog).
+This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=hexlet-vagrant).
+
+See most active contributors on [hexlet-friends](https://friends.hexlet.io/).
